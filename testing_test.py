@@ -1,9 +1,9 @@
 import unittest
-import pass #file name your gonna test
+import fail_test #file name your gonna test
 
 class TestingTest(unittest.TestCase):
     def test_root(self):
-        self.app = testing.app.test_client()
+        self.app = pass_test.app.test_client()
         out = self.app.get('/')
         assert '200 OK' in out.status
         assert 'charset=utf-8' in out.content_type
